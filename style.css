@@ -1,5 +1,85 @@
 .board {
     display: grid;
-    height: 500px;
-    width: 500px;
+    height: 80%;
+    width: 80%;
+    background-color: white;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.board:hover {
+    cursor: pointer;
+}
+
+.flex-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(rgba(96, 79, 252, 0.082), white);
+}
+
+.flex-container h1 {
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 300px;
+    min-height: 300px;
+    width: 60vw;
+    height: 60vw;
+    max-width: 600px;
+    min-height: 600px;
+}
+
+button {
+    margin: 10px 5px;
+    border-radius: 10px;
+    width: 75px;
+    padding: 3px;
+    font-weight: bolder;
+}
+
+input {
+    width: 75px;
+}
+
+.blackbtn {
+    color: white;
+    background-color: black;
+}
+
+.blackbtn:hover {
+    color: black;
+    background-color: white;
+}
+
+.eraserbtn {
+    background-color: white;
+}
+
+.graybtn {
+    background-color: gray;
+}
+
+.rdmbtn {
+    background: linear-gradient(0.25turn, #f65cfc, #ebf8e1, #583cf6);
+}
+
+.rdmbtn:hover {
+    background: linear-gradient(0.25turn, #20ff02, #ebf8e1, #aecc03);
+}
+
+.resetbtn {
+    background-color: gainsboro;
+}
+
+button:hover {
+    cursor: pointer;
 }
