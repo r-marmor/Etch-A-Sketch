@@ -6,16 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    
+    <script
+    src="https://kit.fontawesome.com/4c536a6bd5.js"
+    crossorigin="anonymous"
+></script>
     <title>Etch-A-Sketch</title>
 </head>
 <body>
     <div class="flex-container">
         <div class="title"><h1>SketchPad</h1></div>
-        <div class="coloring">Mode: Coloring</div>
         <div class="content">
             <div class="board"></div>
             <div class="buttons">
+                <input id="colorpicker" type="color" value="#333333">
                 <button class="blackbtn" onclick="changeColor('black')">Black</button>
                 <button class="eraserbtn" onclick="changeColor('white')">Eraser</button>
                 <button class="graybtn" onclick="changeColor('gray')">Gray</button>

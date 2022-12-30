@@ -68,6 +68,11 @@ input {
     background-color: gray;
 }
 
+.graybtn:hover {
+    background-color: rgb(95, 95, 95);
+    color: white;
+}
+
 .rdmbtn {
     background: linear-gradient(0.25turn, #f65cfc, #ebf8e1, #583cf6);
 }
@@ -82,4 +87,19 @@ input {
 
 button:hover {
     cursor: pointer;
+}
+
+  
+  input[type='color']::-webkit-color-swatch-wrapper {
+    padding: 0;
+  }
+
+  button,
+input[type='color'] {
+  transition: transform 0.1s ease-in-out;
+}
+
+button:hover,
+input[type='color']:hover {
+  transform: scale(1.1);
 }
